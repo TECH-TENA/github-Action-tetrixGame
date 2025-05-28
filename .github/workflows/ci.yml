@@ -19,6 +19,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/tetrixgame:v1 .
+          docker run -d -p 3000:3000 ${{ secrets.DOCKERHUB_USERNAME }}/tetrixgame:v1
 
       - name: Push Docker image
         run: |
