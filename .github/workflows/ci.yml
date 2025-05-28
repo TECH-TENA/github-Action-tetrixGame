@@ -19,8 +19,11 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
           
-      - name: NPM Install
-        run: npm install # Add your specific npm install command
+      - name: Install Node.js and npm
+        run: |
+           curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+           sudo apt-get install -y nodejs
+
         
       - name: Install Trivy
         run: |
