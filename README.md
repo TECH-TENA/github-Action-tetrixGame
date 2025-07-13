@@ -28,7 +28,7 @@ Build an automated CI/CD pipeline that performs the following:
 - [ ] Terraform provisions an EKS cluster and node group
 - [ ] Kubernetes deployment manifests are applied to EKS
 - [ ] Checkov scans Terraform code
-- [ ] Slack receives success/failure notifications
+- [ ] Mattermost receives success/failure notifications
 
 ---
 
@@ -45,7 +45,7 @@ Build an automated CI/CD pipeline that performs the following:
 | Trivy          | Security vulnerability scanning    |
 | SonarQube      | Code quality analysis              |
 | Checkov        | IaC security scanning              |
-| Slack          | Deployment notifications           |
+| Mattermost          | Deployment notifications           |
 
 ---
 
